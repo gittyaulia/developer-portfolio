@@ -3,7 +3,16 @@
  */
 module.exports = {
   siteMetadata: {
+    title: 'Andini Faramita\'s Developer Portfolio',
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },    
+  ],
 }
