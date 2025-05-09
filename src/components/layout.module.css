@@ -1,7 +1,53 @@
 .container {
-    margin: auto;
-    max-width: 500px;
+    position: absolute;
+    width: 1400px;
+    height: 800px;
     font-family: sans-serif;
+    background-color:#D9D9D9;
+    border-radius: 14px;
+
+    /* Centering a Div */
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+}
+
+.top-bar {
+    background-color: #F7F1F5;
+    height: 30px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    
+    /* Centering elements vertically in a Div */
+    display: flex;
+    align-items: center;
+
+    /* Spacing between elements */
+    gap: 10px;
+
+    padding-left: 14px;
+    padding-right: 25px;
+}
+
+.site-title {
+    font-size: 0.8rem;
+}
+
+.window-decor {
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+}
+
+/* .icon {
+    background-color: aqua;
+    object-position: 100px 50px;
+} */
+
+.bottom-bar {
+    margin: auto;
 }
 
 .heading {
@@ -22,9 +68,3 @@
     color: black;
 }
 
-.site-title {
-    font-size: 3rem;
-    color: gray;
-    font-weight: 700;
-    margin: 3rem 0;
-  }
